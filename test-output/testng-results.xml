@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-23T15:58:42 IST" name="Default suite" finished-at="2023-04-23T16:00:10 IST" duration-ms="88206">
+    <groups>
+    </groups>
+    <test started-at="2023-04-23T15:58:42 IST" name="Default test" finished-at="2023-04-23T16:00:10 IST" duration-ms="88206">
+      <class name="Home.User_Sanity">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:58:42 IST" name="launchBrowser" finished-at="2023-04-23T15:58:44 IST" duration-ms="2108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLaunchApp()[pri:1, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:58:44 IST" name="verifyLaunchApp" finished-at="2023-04-23T15:59:06 IST" duration-ms="22154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLaunchApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:06 IST" name="closeBrowser" finished-at="2023-04-23T15:59:06 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:06 IST" name="launchBrowser" finished-at="2023-04-23T15:59:07 IST" duration-ms="1000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyElements()[pri:2, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:07 IST" name="verifyElements" finished-at="2023-04-23T15:59:13 IST" duration-ms="6014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyElements -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:13 IST" name="closeBrowser" finished-at="2023-04-23T15:59:13 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:13 IST" name="launchBrowser" finished-at="2023-04-23T15:59:14 IST" duration-ms="917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyCustomerReg()[pri:3, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:14 IST" name="verifyCustomerReg" finished-at="2023-04-23T15:59:22 IST" duration-ms="8209" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Your Account Has Been Created!] but found [My Account Information]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Your Account Has Been Created!] but found [My Account Information]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Home.User_Sanity.verifyCustomerReg(User_Sanity.java:82)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCustomerReg -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:22 IST" name="closeBrowser" finished-at="2023-04-23T15:59:22 IST" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:22 IST" name="launchBrowser" finished-at="2023-04-23T15:59:23 IST" duration-ms="920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLogin()[pri:4, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:23 IST" name="verifyLogin" finished-at="2023-04-23T15:59:29 IST" duration-ms="5699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:29 IST" name="closeBrowser" finished-at="2023-04-23T15:59:29 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:29 IST" name="launchBrowser" finished-at="2023-04-23T15:59:30 IST" duration-ms="894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyShoppingCart()[pri:5, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:30 IST" name="verifyShoppingCart" finished-at="2023-04-23T15:59:36 IST" duration-ms="5782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyShoppingCart -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:36 IST" name="closeBrowser" finished-at="2023-04-23T15:59:36 IST" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:36 IST" name="launchBrowser" finished-at="2023-04-23T15:59:37 IST" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyCheckout()[pri:6, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T15:59:37 IST" name="verifyCheckout" finished-at="2023-04-23T16:00:10 IST" duration-ms="32936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Home.User_Sanity@34a3d150]" started-at="2023-04-23T16:00:10 IST" name="closeBrowser" finished-at="2023-04-23T16:00:10 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Home.User_Sanity -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
